@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Angry Sun</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    </head>
+    <body>
+        <h1>Welcome to the Angry Sun Game</h1>
+        <h2>Collect as many Coins as possible, and watch out for the Angry Sun!</h2>
+        <p>
+            <a href="{{ url_for('game') }}">Play</a>
+        </p>
+        <p>
+            <img src="{{ url_for('static', filename='images/angry_sun.png') }}" alt="Angry sun">
+        </p>
+        <p>
+            <a href="{{ url_for('leaderboard')}}">Leaderboard</a>
+        </p>
+    </body>
+</html>

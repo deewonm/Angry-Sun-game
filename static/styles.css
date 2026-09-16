@@ -1,0 +1,95 @@
+html {
+    background-image: url('images/game_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 1em auto;
+    border: 5px solid rgb(96, 61, 61);
+    width: 924px;
+    height: 540px;
+    image-rendering: pixelated;
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#outcome {
+    color: red;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#score {
+    color: rgb(25, 255, 25);
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+button, p {
+    display: inline-block; 
+    vertical-align: middle;
+    margin: 10px;
+    width: auto;        
+    color: white;
+}
+
+button, #return {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #8B4513;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none; 
+    border-bottom: 5px solid #5D2E0A;
+}
+
+a {
+    color: white;
+    margin: 2em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+#return {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+table {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+  background-color: rgb(26, 255, 26);
+}
+
+th {
+  background: #fff41b;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Angry Sun</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <script>
+        const STATIC_IMAGES = "{{ url_for('static', filename='images/') }}";
+        const STATIC_AUDIO = "{{ url_for('static', filename='audio/') }}";
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <canvas width="512" height="320"></canvas>
+    <p id="score">Coins: 0</p>
+    <button id="restart">Restart Game</button>
+    <p>
+        <a id="return" href="{{ url_for('index') }}">Quit</a>
+    </p>
+    <p id="outcome"></p>
+</body>
+</html>

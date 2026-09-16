@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Angry Sun</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    </head>
+    <body>
+        <h1>Leaderboard</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in scores %}
+                <tr>
+                    <td>#{{ loop.index }}</td>
+                    <td>{{ row.score }} Coins</td>
+                </tr>
+                {% endfor %}
+                
+                {% if not scores %}
+                <tr>
+                    <td colspan="2">No scores yet!</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+        <p><a id="return" href="{{ url_for('index') }}">Menu</a></p>
+    </body>
+</html>
