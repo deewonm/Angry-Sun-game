@@ -1,3 +1,5 @@
+Welcome to the angry sun game!
+
 This is a simple game where the aim is to collect as many coins
 without hitting the sun or falling of the edge of the map:)
 
